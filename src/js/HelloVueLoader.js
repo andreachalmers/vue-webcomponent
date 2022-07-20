@@ -24,7 +24,7 @@ const { loadModule } = window["vue3-sfc-loader"];
 
 const hellovueloader = Vue.createApp({
     components: {
-        'my-component': Vue.defineAsyncComponent(() => loadModule('./components/myComponent.vue', options)),
+        'my-component': Vue.defineAsyncComponent(() => loadModule('../src/components/myComponent.vue', options)),
     },
     template: `Hello <my-component></my-component> from vue3-sfc-loader`,
 });
